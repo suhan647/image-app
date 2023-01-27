@@ -173,8 +173,6 @@ export default function NewPostMoadal() {
             </Box>
             </Box>
             </Box>
-
-            
         </Box>
     </Box>
 </Grid>
