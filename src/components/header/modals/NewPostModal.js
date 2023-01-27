@@ -134,6 +134,7 @@ export default function NewPostMoadal() {
     <Box sx={{ display: { xs: 'block', sm: 'none', md: 'block' } }}>
 
         <Box sx={{ alignItems: 'center', marginTop: '40px', display: { xs: 'block', lg: 'none', xl: 'block'} }}>
+        <Box sx={{ display: { xs: 'block', xl: 'none' } }}>
             <Box sx={{ color: 'white', display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: '90px' }}>
                 <Box sx={{ display: 'flex', justifyContent: 'center' }}>
     
@@ -157,7 +158,8 @@ export default function NewPostMoadal() {
                             <AddIcon /> Select photo
                         </Fab>
                     </label>
-                </Box>
+                    </Box>
+               
                 <Box sx={{ display: 'flex', marginTop: '40px', }}>
                     <div className='line'></div>
                     <small>Click Upload</small>
@@ -168,6 +170,7 @@ export default function NewPostMoadal() {
                 <Button variant="contained" sx={{  width:'100%', fontSize:'20px',  backgroundColor: '#413839', color: 'white', borderRadius: '1px', }} onClick={submitHandler} startIcon={<CloudUploadIcon />}>
                     Upload
                 </Button>
+            </Box>
             </Box>
             </Box>
 
