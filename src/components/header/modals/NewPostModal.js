@@ -133,7 +133,7 @@ export default function NewPostMoadal() {
 <Grid item sx={{ display: { xs: 'block', md: 'none', lg: 'block' } }}>
     <Box sx={{ display: { xs: 'block', sm: 'none', md: 'block' } }}>
 
-        <Box sx={{ alignItems: 'center', marginTop: '40px', }}>
+        <Box sx={{ alignItems: 'center', marginTop: '40px', display: { xs: 'block', lg: 'none', xl: 'block'} }}>
             <Box sx={{ color: 'white', display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: '90px' }}>
                 <Box sx={{ display: 'flex', justifyContent: 'center' }}>
     
