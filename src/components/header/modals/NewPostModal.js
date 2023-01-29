@@ -40,13 +40,15 @@ export default function NewPostMoadal() {
         data.append("upload_preset", "imagesUpload")
         data.append("cloud_name", "dwhgqwwat")
 
-        await axios.post("https://api.cloudinary.com/v1_1/dwhgqwwat/image/upload", data)
-            .then((data) => {
-                setUrl(data.data.secure_url)
-            })
+       const response = await axios.post("https://api.cloudinary.com/v1_1/dwhgqwwat/image/upload", data)
+       
+            // .then((data) => {
+            //     setUrl(data.data.secure_url)
+            // })
+
 
         let formdata = {
-            urls: urls
+            urls: response.data.secure_url
         }
 
         await axios.post('https://imgur-b474b-default-rtdb.firebaseio.com/img.json', formdata)
@@ -58,6 +60,8 @@ export default function NewPostMoadal() {
                 console.log(err);
             })
 
+            setUrl(data.data.secure_url)
+            
         // setImage('')
        
     }
